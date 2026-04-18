@@ -1,8 +1,7 @@
-# FlowCα: Accurate Cα Atom Prediction in Cryo-EM Maps via Flow Matching
 # FlowC&alpha;: Accurate C&alpha; Atom Prediction in Cryo-EM Maps via Flow Matching
 
 
-FlowCα is a flow‑matching‑based framework that directly predicts the continuous spatial distribution of Cα coordinates from cryo‑EM density maps.
+FlowC&alpha is a flow‑matching‑based framework that directly predicts the continuous spatial distribution of C&alpha coordinates from cryo‑EM density maps.
 
 ## 📦 Installation
 
@@ -54,7 +53,7 @@ All output files are saved in the **same directory as the input density map** (i
 
 | File Name | Description |
 |-----------|-------------|
-| `output_ca_points_before_pruning.cif` | Raw predicted Cα coordinates **before** clustering. This file contains all candidates directly sampled from the flow matching model and may include **false positives** (extra atoms) due to noise or ambiguous density. |
-| `see_alpha_output_ca.cif` | **Final predicted Cα atoms after clustering and pruning.** This is the recommended result to use for downstream structure analysis or model building. Clustering removes spurious points and keeps only high‑confidence Cα positions. |
+| `output_ca_points_before_pruning.cif` | Raw predicted C&alpha coordinates **before** clustering. This file contains all candidates directly sampled from the flow matching model and may include **false positives** (extra atoms) due to noise or ambiguous density. |
+| `see_alpha_output_ca.cif` | **Final predicted C&alpha atoms after clustering and pruning.** This is the recommended result to use for downstream structure analysis or model building. Clustering removes spurious points and keeps only high‑confidence C&alpha positions. |
 
 > 💡 **Tip:** The `--threshold` parameter controls the probability cutoff during inference, which affects both raw predictions and the final clustering result.
