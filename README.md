@@ -34,6 +34,9 @@ python inference.py \
 | `--threshold` | Probability threshold for Cα prediction (default: 0.5) |
 
 ### Example
+Please download `emd_26993.mrc` from  
+<https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-26993/map/emd_26993.map.gz>  
+and after decompression, place it in `./examples/26993/`.
 
 ```bash
 python inference.py \
