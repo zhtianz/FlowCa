@@ -18,7 +18,8 @@ cd FlowCa
 python inference.py \
     --map_path /path/to/density.mrc \
     --model_path /path/to/pretrained_model.pt \
-    --output_dir ./results
+    --contour (recommended contour level) \
+    --threshold (default=0.5)
 ```
 
 ### Full options
